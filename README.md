@@ -1,36 +1,53 @@
 
-# ¡¡¡ THIS IS NOT THE OFFICIAL BOB WALLET !!!
+```bash
+THIS IS NOT THE OFFICIAL BOB WALLET !!!
 
 THIS IS A PERSONAL-USE FORK OF BOB CALLED BETTY. DO NOT USE THIS WALLET.
 
-## You have been warned. 
+You have been warned. 
+```
 
-
-
-
+<br></br>
 <p align="center"><img src="./resources/icons/logowithtext.png"></p>
-
+<br></br>
 
 # Betty Wallet: A Personal Use Fork of Bob Wallet
 
--- increased list lengths in Portfolio and Watchlist (100 & 200)
--- Russian language integration
--- Romanian language integration
--- TBD 'sort by expiry time' in Domain Manager
--- renumeration of expiry times (0-0.99 1mnth, 1-1.99 2mnth, etc)
--- Bulk Transfer to display IDNs
+<ul>
+  <li>[x] Increased list lengths in Portfolio and Watchlist (100 & 200)</li>
+<li>[ ] Russian language integration</li>
+<li>[ ] Romanian language integration</li>
+<li>[ ] 'Sort by expiry time' in Domain Manager</li>
+<li>[ ] Renumeration of expiry times (1 = 1-2, 2 = 2-3, etc...)</li>
+<li>[ ] Bulk Transfer to display IDNs</li>
+</ul>
 
 Bob Wallet is a [Handshake](https://handshake.org) wallet with an integrated full node.
 
 **Status**: This is pre-alpha personal-use software. As with all wallet GUIs, please use with care, and at your own risk.
 
-### Building From Source
+## Building From Source
 
-Please see this [guide](https://gist.github.com/pinheadmz/314aed5123d29cb89bfc6a7db9f4d02e), courtesy of [@pinheadmz](https://github.com/pinheadmz).  It explains how to get set up in dev mode, and includes some helpful tips like (i) how to tail log output and (ii) how one can have a "personal mainnet" Bob while developing on a different Bob instance.
+Please see this [guide](https://gist.github.com/pinheadmz/314aed5123d29cb89bfc6a7db9f4d02e), courtesy of [@pinheadmz](https://github.com/pinheadmz), for more detailed information.
 
-Due to Ledger USB integration, additional dependencies are required:
+### Linux
 
-#### OSX
+```bash
+apt-get install libusb-1.0-0-dev libudev-dev
+git clone https://github.com/kyokan/bob-wallet
+cd bob-wallet
+npm install
+```
+
+Build the app package:
+
+```bash
+npm run package-linux
+```
+
+The output app will be created in the `/release` folder. Open `Bob-x.x.x.AppImage` to start the wallet.
+
+### OSX
 
 If you are running OSX on an arm64 processor (aka "Apple Silicon" or "M1") it
 is highly recommended to upgrade to Node.js v16
@@ -67,41 +84,9 @@ npm run package-mac-intel
 The output app will be created in the `/release/mac` or `/release/mac-arm64` folder.
 Open `Bob.app` to start the wallet.
 
+### Windows
 
-#### Linux
-
-```bash
-apt-get install libusb-1.0-0-dev libudev-dev
-git clone https://github.com/kyokan/bob-wallet
-cd bob-wallet
-npm install
-```
-
-Build the app package:
-
-```bash
-npm run package-linux
-```
-
-The output app will be created in the `/release` folder. Open `Bob-x.x.x.AppImage` to start the wallet.
-
-##### Ledger
-
-Note that to use Ledger devices with Linux, permissions must be granted to access the USB device.
-Follow Ledger's own guide [here](https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues)
-which will instruct you to execute this command:
-
-```
-wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
-```
-
-
-#### Test in development mode
-
-```bash
-npm run dev
-```
-
+Why are you using windows? Start [here](https://ubuntu.com/).
 
 ## License
 

@@ -13,6 +13,13 @@ THIS IS A PERSONAL-USE FORK OF BOB CALLED BETTY. DO NOT USE THIS WALLET.
 
 # Betty Wallet: A Personal Use Fork of Bob Wallet
 
+-- increased list lengths in Portfolio and Watchlist (100 & 200)
+-- Russian language integration
+-- Romanian language integration
+-- TBD 'sort by expiry time' in Domain Manager
+-- renumeration of expiry times (0-0.99 1mnth, 1-1.99 2mnth, etc)
+-- Bulk Transfer to display IDNs
+
 Bob Wallet is a [Handshake](https://handshake.org) wallet with an integrated full node.
 
 **Status**: This is pre-alpha personal-use software. As with all wallet GUIs, please use with care, and at your own risk.

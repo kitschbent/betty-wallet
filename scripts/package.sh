@@ -10,7 +10,7 @@ https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel
 https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts/app/menu.js -o ./dist/menu.js
 https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts/app/sentry.js -o ./dist/sentry.js
 https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts/app/mainWindow.js -o ./dist/mainWindow.js
-https://github.com/kyokan/bob-wallet/tree/master/scripts$DIR/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts$DIR/app/preload.js -o ./dist/preload.js
+https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts$DIR/app/preload.js -o ./dist/preload.js
 https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts$DIR/app/background -d ./dist/background
 https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts/app/constants -d ./dist/constants
 https://github.com/kyokan/bob-wallet/tree/master/scripts/node_modules/.bin/babel https://github.com/kyokan/bob-wallet/tree/master/scripts/app/db -d ./dist/db

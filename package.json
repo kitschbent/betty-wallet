@@ -1,9 +1,9 @@
 {
-  "name": "bob-wallet",
-  "productName": "Bob",
-  "author": "Kyokan Group, Inc.",
-  "version": "1.0.0",
-  "description": "A Handshake wallet and auction manager.",
+  "name": "betty-wallet",
+  "productName": "Betty",
+  "author": "unauthored",
+  "version": "1.0.0-kb",
+  "description": "A (personalized) Handshake wallet and auction manager.",
   "scripts": {
     "build": "./scripts/package.sh",
     "build-renderer": "NODE_ENV=production webpack --config ./configs/webpack.config.renderer.prod.babel.js",
@@ -26,12 +26,12 @@
   },
   "main": "./dist/main.js",
   "build": {
-    "productName": "Bob",
-    "appId": "com.kyokan.BobRelease",
+    "productName": "Betty",
+    "appId": "com.kitsch-bent.BettyRelease",
     "protocols": {
-      "name": "bob-wallet",
+      "name": "betty-wallet",
       "schemes": [
-        "bob"
+        "betty"
       ]
     },
     "files": [
@@ -84,7 +84,7 @@
         "AppImage"
       ],
       "desktop": {
-        "MimeType": "x-scheme-handler/bob;"
+        "MimeType": "x-scheme-handler/betty;"
       },
       "category": "Development"
     },
@@ -95,14 +95,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyokan/bob-electron.git"
+    "url": "git+https://github.com/kitsch-bent/betty-electron.git"
   },
   "bugs": {
-    "url": "https://github.com/kyokan/bob-wallet/issues/new?template=bug_report.md"
+    "url": "https://github.com/kitsch-bent/betty-wallet/issues/new?template=bug_report.md"
   },
-  "license": "MIT",
+  "license": "cc0",
   "keywords": [],
-  "homepage": "https://bobwallet.io/",
+  "homepage": "deebo/",
   "devDependencies": {
     "@babel/cli": "7.18.6",
     "@babel/core": "7.18.6",
